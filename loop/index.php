@@ -1,12 +1,16 @@
 <?php
 //for
-header('Refresh: 1');
+
 ?>
 <style>
     table, tr, td {
-        width:110px;
+        width:200px;
         border: 1px solid black;
         border-collapse:collapse;
+    }
+    td {
+        width:20px;
+        text-align: center;
     }
 </style>
 
@@ -14,17 +18,21 @@ header('Refresh: 1');
 echo'<h5>Ülesanne 2</h5>';
 
 echo '<table>';
-    for($reaNumber = 1; $reaNumber <= 5; $reaNumber++) {
+    echo '<tr>';
+    for ($arv1 = 0; $arv1 <= 10; $arv1++) {
+        $txt = ($arv1 == 0) ? '&nbsp;' : $arv1;
+        echo '<th style="background: deepskyblue">'.$txt.'</th>';
+    }
+    echo '</tr>';
+    for ($arv1 =1; $arv1 <= 10; $arv1++) {
         echo '<tr>';
-
-            for ($veeruNumber =1; $veeruNumber <= 5; $veeruNumber++) {
-                $varv = '#';
-                for ($kord = 1; $kord <= 6; $kord++) {
-                    $varv = $varv.dechex(rand(0, 15));
-                }
-                echo '<td style="background: ' . $varv . '">&nbsp;</td>';
+            echo '<th style="background: coral">'.$arv1.'</th>';
+            for ($arv2 = 1; $arv2 <= 10; $arv2++) {
+                echo '<td>';
+                echo ($arv1 * $arv2);
+                echo '</td>';
             }
         echo '</tr>';
     }
 
-echo '</table';
+echo '</table>';
