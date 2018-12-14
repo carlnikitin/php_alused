@@ -1,38 +1,17 @@
 <?php
-//for
+//while
 
-?>
-<style>
-    table, tr, td {
-        width:200px;
-        border: 1px solid black;
-        border-collapse:collapse;
-    }
-    td {
-        width:20px;
-        text-align: center;
-    }
-</style>
+$arv = 1234;
 
-<?php
-echo'<h5>Ülesanne 2</h5>';
+while ($arv != 0) {
+    $number = $arv % 10;
+    echo 'Number = '.$number.'<br>';
+    $arv = $arv / 10;
+    echo 'Arv float = '.$arv.'<br>';
+    settype($arv, 'int');
+    echo 'Arv int = '.$arv.'<br>';
+    $summa = $summa + $number;
+    echo '<hr>';
+}
 
-echo '<table>';
-    echo '<tr>';
-    for ($arv1 = 0; $arv1 <= 10; $arv1++) {
-        $txt = ($arv1 == 0) ? '&nbsp;' : $arv1;
-        echo '<th style="background: deepskyblue">'.$txt.'</th>';
-    }
-    echo '</tr>';
-    for ($arv1 =1; $arv1 <= 10; $arv1++) {
-        echo '<tr>';
-            echo '<th style="background: coral">'.$arv1.'</th>';
-            for ($arv2 = 1; $arv2 <= 10; $arv2++) {
-                echo '<td>';
-                echo ($arv1 * $arv2);
-                echo '</td>';
-            }
-        echo '</tr>';
-    }
-
-echo '</table>';
+echo 'Arvu numbrite summa = '.$summa.'<br>';
