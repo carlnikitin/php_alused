@@ -1,25 +1,20 @@
 <?php
 // tingimuslaused
+?>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid black;
+        }
+</style>
 
-/*
- * if(tingimuslause) {
- *      tegevused, mis toimivad, kui
- *      tingimus kehtib
- * } else {
- *      kui tingimus ei kehti
- * }
- */
+<?php
 
-echo '<h5>Ülesanne 1</h5>';
-$arv = rand(0, 100);
-if($arv >= 0 and $arv < 25) {
-    echo '<div style="color: red">'.$arv.'</div>';
-} else if ($arv >= 25 and $arv < 50) {
-    echo '<div style="color: green">'.$arv.'</div>';
-} else if ($arv >= 50 and $arv < 75) {
-    echo '<div style="color: blue">'.$arv.'</div>';
-} else if ($arv >= 75 and $arv < 100) {
-    echo '<div style="color: orange">'.$arv.'</div>';
-} else {
-    echo '<div style="color: black">'.$arv.'</div>';
-}
+echo '<h5>Valgusfoor</h5>';
+$aktiivne = 'roheline';
+switch ($aktiivne) {
+    case 'punane':
+    echo '<div style="background: red"></div>';
+    echo '<div></div>';
