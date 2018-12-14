@@ -1,7 +1,8 @@
 <?php
 //while
 
-$arv = 1234;
+$arv = 48557812535;
+$kordamine = 0;
 
 while ($arv != 0) {
     $number = $arv % 10;
@@ -10,8 +11,8 @@ while ($arv != 0) {
     echo 'Arv float = '.$arv.'<br>';
     settype($arv, 'int');
     echo 'Arv int = '.$arv.'<br>';
-    $summa = $summa + $number;
+    if ($number == 5) $kordamine++;
     echo '<hr>';
 }
 
-echo 'Arvu numbrite summa = '.$summa.'<br>';
+echo 'Number 5 esineb '.$kordamine.' korda<br>';
