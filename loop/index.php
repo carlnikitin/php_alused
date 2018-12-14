@@ -1,14 +1,30 @@
 <?php
 //for
-
-echo '<h5>Ülesanne loop</h5>';
-
-for($arv = 1; $arv <= 10; $arv++) {
-    $varv = '';
-    if ($arv % 2 == 0) {
-        $varv = 'green';
-    } else {
-        $varv = 'red';
+header('Refresh: 1');
+?>
+<style>
+    table, tr, td {
+        width:110px;
+        border: 1px solid black;
+        border-collapse:collapse;
     }
-    echo '<div style="color: '.$varv.'">'.$arv.'</div>';
-}
+</style>
+
+<?php
+echo'<h5>Ülesanne 2</h5>';
+
+echo '<table>';
+    for($reaNumber = 1; $reaNumber <= 5; $reaNumber++) {
+        echo '<tr>';
+
+            for ($veeruNumber =1; $veeruNumber <= 5; $veeruNumber++) {
+                $varv = '#';
+                for ($kord = 1; $kord <= 6; $kord++) {
+                    $varv = $varv.dechex(rand(0, 15));
+                }
+                echo '<td style="background: ' . $varv . '">&nbsp;</td>';
+            }
+        echo '</tr>';
+    }
+
+echo '</table';
