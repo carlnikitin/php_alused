@@ -1,9 +1,12 @@
 <?php
 // funktsioonid
 
-function test() {
-    $testvariable = "this is a test variable";
+$life = 42;
+
+function meaningOfLife() {
+    print("The meaning of life is $life<br>");
 }
-print "test variable: $testvariable<br>";
+
+meaningOfLife();
 
 ?>
