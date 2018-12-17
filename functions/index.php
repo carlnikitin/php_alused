@@ -1,7 +1,9 @@
 <?php
 // funktsioonid
 
-$num = -321;
-$newnum = abs ($num);
-print $newnum;
+function bighello() {
+    print ("<h1>HELLO</h1>");
+}
+
+bighello();
 ?>
