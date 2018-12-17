@@ -1,10 +1,9 @@
 <?php
 // funktsioonid
 
-function addNums ($firstnum, $secondnum)
-{
-    $result = $firstnum + $secondnum;
-    return $result;}
-    print addNums(3, 5);
+function test() {
+    $testvariable = "this is a test variable";
+}
+print "test variable: $testvariable<br>";
 
 ?>
