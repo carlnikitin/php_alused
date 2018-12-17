@@ -1,11 +1,10 @@
 <?php
 // funktsioonid
 
-function printBR ($txt) {
-    print("$txt<br>\n");
-}
+function addNums ($firstnum, $secondnum)
+{
+    $result = $firstnum + $secondnum;
+    return $result;}
+    print addNums(3, 5);
 
-printBR('This is a line');
-printBR('This is a new line');
-printBR('This is yet another line');
 ?>
