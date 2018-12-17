@@ -1,9 +1,11 @@
 <?php
 // funktsioonid
 
-function bighello() {
-    print ("<h1>HELLO</h1>");
+function printBR ($txt) {
+    print("$txt<br>\n");
 }
 
-bighello();
+printBR('This is a line');
+printBR('This is a new line');
+printBR('This is yet another line');
 ?>
