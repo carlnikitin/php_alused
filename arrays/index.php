@@ -2,11 +2,19 @@
 // arrays
 
 $kasutajad = array(
-    'alice',
-    'bob',
-    'lucy'
+    array(
+        'alice',
+        'alice',
+        'Liddle'
+    ),
+    array (
+        'bob',
+        'bob',
+        'Builder'
+    )
 );
 
-foreach ($kasutajad as $kasutaja) {
-    echo $kasutaja.'<br>';
-}
+echo '<hr>';
+echo '<pre>';
+print_r ($kasutajad);
+echo '</pre>';
