@@ -15,6 +15,9 @@ $kasutajad = array(
 );
 
 echo '<hr>';
-echo '<pre>';
-print_r ($kasutajad);
-echo '</pre>';
+foreach ($kasutajad as $kasutaja) {
+    foreach ($kasutaja as $element) {
+        echo $element.'<br>';
+    }
+    echo '<hr>';
+}
