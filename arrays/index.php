@@ -7,6 +7,6 @@ $kasutajad = array(
     'lucy'
 );
 
-for ($i = 0; $i < count($kasutajad); $i++) {
-    echo $i.' - '.$kasutajad[$i].'<br>';
+foreach ($kasutajad as $kasutaja) {
+    echo $kasutaja.'<br>';
 }
