@@ -21,3 +21,12 @@ function query($sql, $conn) {
 
     return $result;
 }
+
+function getData($sql, $conn) {
+    $data = array();
+    $result = query($sql, $conn);
+    while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        $data[] = $row;
+    }
+    return $data;
+}
