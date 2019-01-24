@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: macbook
- * Date: 2019-01-24
- * Time: 14:34
- */
+
+//andmed html vormist
+$username = $_GET['uname'];
+$password = $_GET['upass'];
+
+echo $username.' '.$password;
