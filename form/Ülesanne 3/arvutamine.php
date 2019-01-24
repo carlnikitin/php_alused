@@ -1,5 +1,7 @@
 <?php
-/* Tere */
+/**
+ * Tere
+ */
 ?>
 <?php
 // andmed vormist ja arvutused
