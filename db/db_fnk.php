@@ -10,3 +10,14 @@ function connect_db($hostName, $dbUser, $dbPass, $dbName) {
 
     return $conn;
 }
+
+function query($sql, $conn) {
+    $result = mysqli_query($conn, $sql);
+
+    if(!$result) {
+        echo 'Problem with <b>'.$sql.'</b><br>';
+        exit;
+    }
+
+    return $result;
+}
