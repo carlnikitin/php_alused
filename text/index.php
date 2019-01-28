@@ -83,5 +83,35 @@ while($leia_tekstist = strpos($tekst, $otsitav, $nihe)){	//4 10 13 48
 
 
 //Teksti asendamine
+//substr_replace() funktsioon
+$tekst = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav_algus = 4;
+$otsitav_pikkus = 4;
+echo substr_replace($tekst, $asendus, $otsitav_algus, $otsitav_pikkus);
+
+
+//Nagu näha määrasime koha, kuhu uus sõna läheb (4) ning mitu tähte nö. ära kustutatakse (4). Samas saab need arvud ka ju dünaamiliseks teha.
+$tekst = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav = 'papa';
+$nihe = 0;
+$asenduse_algus = strpos($tekst, $otsitav, $nihe);
+$asenduse_markide_arv = strlen($otsitav);
+echo substr_replace($tekst, $asendus, $asenduse_algus, $asenduse_markide_arv);
+
+
+//str_replace() funktsioon
+$tekst = 'Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga';
+$otsi = 'lehm';
+$asenda = 'koer';
+echo str_replace($otsi, $asenda, $tekst);
+
+
+//Selle funktsiooni juures on tore see, et otsitavad ja asendatavad võivad olla massiivis.
+$tekst = 'Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga';
+$otsi = array('lehm', 'saba', 'taga');
+$asenda = array('koer', 'sarv', 'ees');
+echo str_replace($otsi, $asenda, $tekst);
 
 ?>
