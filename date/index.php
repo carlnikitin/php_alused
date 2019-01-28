@@ -29,7 +29,7 @@ echo $paev.'.'.$kuu.' '.$aasta;	//22.veebruar2013
 
 //Muu soovitud kuupäeva genereerimine
 //Kasutame mktime
-mktime(tunnid, minutid, sekundid, kuu, päev, aasta, suveaeg)
+mktime(tunnid, minutid, sekundid, kuu, päev, aasta, suveaeg);
 
 
 $sp = mktime(0,0,0,10,29,1969);
