@@ -38,4 +38,13 @@ $roppused = array('loll', 'mölakas', 'jobu');
 $tarnid = '****';
 echo str_replace($roppused, $tarnid, $message) . '<br>';
 
+
+//Kasutajalt saadud eesnime ja perenime põhjal luuakse talle email lõpuga @hkhk.edu.ee.
+//Kusjuures täpitähed asendatakse ä->a, ö->o, ü->y, õ->o ja kogu email on väikeste tähtedega
+//Näiteks: sisend–>Ülle ja Doos; väljund–>ylle.doos@hkhk.edu.ee
+$kasutaja_eesnimi = 'Mari';
+$kasutaja_perenimi = 'Maasikas';
+echo str_replace(array('ä', 'ö', 'ü', 'õ'), array('a', 'o', 'u', 'o'), mb_strtolower($kasutaja_eesnimi . '.' . $kasutaja_perenimi . '@hkhk.edu.ee'));
+
+
 ?>
