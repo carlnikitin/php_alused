@@ -17,8 +17,8 @@ echo strtoupper(implode('.', $stalker_array));
 echo '<br>';
 
 ?>
-//Koosta tekstiväli, mis kuvab kasutaja sisestatud sõnumeid. Kasutaja ropud sõnad asendatakse tärnidega.
-//Näiteks: sisend–>Sa oled täielik noob; väljund–>Sa oled täielik ***
+<!--Koosta tekstiväli, mis kuvab kasutaja sisestatud sõnumeid. Kasutaja ropud sõnad asendatakse tärnidega.
+Näiteks: sisend–>Sa oled täielik noob; väljund–>Sa oled täielik *** -->
 
 <html>
 
